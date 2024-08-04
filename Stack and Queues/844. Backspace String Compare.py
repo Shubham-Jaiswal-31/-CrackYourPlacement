@@ -18,8 +18,8 @@ class Solution:
             si = nextValidChar(s, si)
             ti = nextValidChar(t, ti)
 
-            char_s = s[si] if si > 0 else ''
-            char_t = t[ti] if ti > 0 else ''
+            char_s = s[si] if si >= 0 else ''
+            char_t = t[ti] if ti >= 0 else ''
             if char_s != char_t:
                 return False
             si -= 1
